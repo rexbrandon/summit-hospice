@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$backGroundDark: #EFEFEF;
+$backGroundLight: #fbfcfe;
+
+$darkRed: #E00000;
+$logoRed: #fc0001;
+$redCompliment: #FF4747;
+$dimGray: #686963;
+$darkGray: #505050;
+$wavyBlack: #1F0812;
+$snow: #FBF5F3;
+$babyBlue: #A9CEF4;
+$superdarkBlue: #081726;
+$darkBlue: #13375c;
+$deepBlue: #005cb9;
+
+*{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+// GLOBAL MIXINS
+@mixin centerObj {
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin divBackground($backgroundGradient, $backgroundImage) {
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: $backgroundGradient, $backgroundImage;
+}
