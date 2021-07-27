@@ -3,4 +3,93 @@
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+
+.footerMain {
+  padding: 50px 0px;
+  background: #005cb9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+@media screen and (max-width: 1030px) {
+  .footerMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footerMain .footerCol1, .footerMain .footerCol2, .footerMain .footerCol3, .footerMain .footerCol4 {
+  width: 90%;
+  max-width: 300px;
+  margin: 30px 20px;
+}
+
+.footerMain .footerCol1 img, .footerMain .footerCol2 img, .footerMain .footerCol3 img, .footerMain .footerCol4 img {
+  width: 90%;
+}
+
+.footerMain .footerCol1 .line-0, .footerMain .footerCol2 .line-0, .footerMain .footerCol3 .line-0, .footerMain .footerCol4 .line-0 {
+  width: 200px;
+  height: 1px;
+  margin: 5px 0px;
+  background: #fbfcfe;
+}
+
+.footerMain .footerCol1 .line-1, .footerMain .footerCol2 .line-1, .footerMain .footerCol3 .line-1, .footerMain .footerCol4 .line-1 {
+  width: 150px;
+  height: 1px;
+  margin: 5px 0px;
+  background: #fbfcfe;
+}
+
+.footerMain .footerCol1 .footer-heading, .footerMain .footerCol2 .footer-heading, .footerMain .footerCol3 .footer-heading, .footerMain .footerCol4 .footer-heading {
+  color: #fbfcfe;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footerMain .footerCol1 a, .footerMain .footerCol2 a, .footerMain .footerCol3 a, .footerMain .footerCol4 a {
+  text-decoration: none;
+}
+
+.footerMain .footerCol1 p, .footerMain .footerCol2 p, .footerMain .footerCol3 p, .footerMain .footerCol4 p {
+  color: #fbfcfe;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footerMain .footerCol1 .footer-list, .footerMain .footerCol2 .footer-list, .footerMain .footerCol3 .footer-list, .footerMain .footerCol4 .footer-list {
+  list-style: none;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.footerMain .footerCol1 .footer-list a, .footerMain .footerCol2 .footer-list a, .footerMain .footerCol3 .footer-list a, .footerMain .footerCol4 .footer-list a {
+  text-decoration: none;
+}
+
+.footerMain .footerCol1 .footer-list li, .footerMain .footerCol2 .footer-list li, .footerMain .footerCol3 .footer-list li, .footerMain .footerCol4 .footer-list li {
+  color: #fbfcfe;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 2px 0px;
+}
 /*# sourceMappingURL=main.css.map */
