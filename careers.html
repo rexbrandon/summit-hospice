@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/static/main/js/mobileMenu.js"></script>
+    <link rel="shortcut icon" type="image/png" href="/static/main/img/icons/favicon.png">
+    <title>Careers At Summit Hospice</title>
+</head>
+<body data-barba="wrapper">
+
+    <div class="container0">
+
+        <div class="transition"></div>
+
+        <nav class="mobileNav">
+            <!--Will show with nav closed-->
+            <a href="/"><img src="/static/main/img/logos/summitlogo.svg" alt="summit logo"></a>
+            <!--Only shows when nav is opened-->
+            <div id="navBackground" class="overlay">
+                <img src="/static/main/img/logos/summitlogo2.svg" alt="summit logo">
+    
+                <a href="javascript:void(0)" onclick="closeNav()"><i class="material-icons closebtn" onclick="openNav()"> menu_open </i></a>
+                <ul class="navElements">
+                    <li><a href="/services-page.html">Services</a></li>
+                    <div class="menu-line"></div>
+                    <li><a href="/about.html">About</a></li>
+                    <div class="menu-line"></div>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <div class="menu-line"></div>
+                    <li><a href="/careers.html">Careers</a></li>
+                </ul>
+    
+            </div>
+            <!--Will show with nav closed-->
+            <i class="material-icons openbtn" onclick="openNav()"> menu </i>
+        </nav>
+    
+        <nav class="desktopNav">
+            <a href="/"><img src="/static/main/img/logos/summitlogo.svg" alt="summit logo"></a>
+            <ul class="navElements">
+                <a href="/services-page.html"><li>Services</li></a>
+                <a href="/about.html"><li>About</li></a>
+                <a href="/careers.html"><li>Careers</li></a>
+                <a href="/contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+        <main data-barba="container" data-barba-namespace="careers">
+            <div class="testDiv three"></div>
+        </main>
+    
+        <footer class="footerMain">
+            <div class="footerCol1"><img src="/static/main/img/logos/summitlogo2.svg" alt="summit-logo"></div>
+    
+            <div class="footerCol2">
+                <h4 class="footer-heading">Menu</h4>
+                <div class="line-0"></div>
+                <div class="line-1"></div>
+                <ul class="footer-list">
+                    <a href="/services-page.html"><li>Services</li></a>
+                    <a href="/about.html"><li>About</li></a>
+                    <a href="/careers.html"><li>Careers</li></a>
+                    <a href="/contact.html"><li>Contact</li></a>
+                </ul>
+            </div>
+    
+            <div class="footerCol3">
+                <h4 class="footer-heading">Hours Of Operation</h4>
+                <div class="line-0"></div>
+                <div class="line-1"></div>
+                <br>
+                <p>Monday - Friday <br> 8AM - 5PM</p>
+                <br>
+                <a href="tel:3613964803"><p>Phone: (361)-396-4803</p></a>
+                <br>
+                <p>Fax: (361)-396-4805</p>
+                <br>
+                <p>Toll Free: (855)-248-4271</p>
+            </div>
+    
+        </footer>
+
+    </div>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="/static/main/js/pageTransitions.js"></script>
+</body>
+</html>
