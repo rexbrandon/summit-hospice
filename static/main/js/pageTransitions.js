@@ -1,9 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/barba.js@1.0.0/dist/barba.min.js"></script>
+
 function pageTransition() {
+
     let tl = gsap.timeline();
 
     // opening and closing the transition div
-    tl.to('.transition', { duration: 1, scaleY: 1, transformOrgin: "bottom left"})
-    tl.to('.transition', {duration: .5, scaleY: 0, transformOrgin: "bottom left", delay: .1})
+    tl.to('ul.transition li', {duration: 1, scaleY: 1, transformOrgin: "bottom left", stagger: .25})
+    // this animation shows the second page
+    tl.to('ul.transition li', {duration: .35, scaleY: 0, transformOrgin: "bottom left", stagger: .15, delay: .1})
 }
 /*
 function contentAnimation() {
@@ -13,19 +17,20 @@ function contentAnimation() {
 */
 // sets waitout time
 function delay(n) {
-    // || is a logical operator for or && would be and
     n = n || 2000;
     return new Promise(done => {
         setTimeout(() => {
             done();
         }, n);
-    })
+    });
 }
 
 barba.init({
 
+    // works asynchronously 
     sync: true,
 
+    // putting transitions into an object
     transitions: [{
         async leave(data) {
             const done = this.async();
@@ -33,13 +38,11 @@ barba.init({
             pageTransition();
             await delay(1500);
             done();
-        },
+        }
         /*
-        FUNCTION FOR ANIMATING PAGE CONTENT
-        enter and once in the hooks portion of barba docs
         async enter(data) {
             contentAnimation();
-        },
+        }, 
 
         async once(data) {
             contentAnimation();
