@@ -1,0 +1,166 @@
+.mobileNav {
+    width: 100%;
+    background: $backGroundLight;
+    height: 80px;
+    position: relative;   
+    padding-top: 15px;
+    top: 0;
+    z-index: 10;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+    img{
+        width: 110px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .overlay{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: $deepBlue;
+        overflow-x: hidden; // Disable horizontal scroll
+        transition: .4s;
+        li{
+            font-size: 20px;
+            &:hover{
+                color: $deepBlue;
+            }
+        }
+        .menu-line {
+            width: 80%;
+            height: 1px;
+            @include centerObj();
+            margin-top: 10px;
+            background-color: $backGroundLight;
+        }
+        .closebtn{
+            @include mobileNavBtn();
+            text-decoration: none;
+            color: $backGroundLight;
+        }
+        img{
+            width: 110px;
+            display: block;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        .navElements {
+            padding: 0;
+            width: 100%;
+            text-align: left;
+            margin-top: 50%; // avoids contact with close button on smaller screens
+            a {
+                color: $backGroundLight;
+                @include nav-links-setup();
+            }
+        }
+    }
+    .openbtn{
+        @include mobileNavBtn();
+        color: $logoRed;
+    }  
+}
+.desktopNav{
+    display: none;
+    position: relative;
+    background: $backGroundLight;
+    justify-content: flex-end;
+    height: 110px;
+    width: 100%;
+    .navElements{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 30px;
+        a{
+            text-decoration: none;
+            color: $wavyBlack;
+            font-size: 20px;
+            font-weight: 300;
+            li{
+                padding: 0px 20px;
+                list-style: none;
+                &:hover{
+                    color: $deepBlue;
+                }
+            }
+        }
+    }
+    img{
+            width: 145px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+    }
+    @media screen and (min-width: 1000px) {
+        display: flex;
+    }
+}
+.footerMain{
+    padding: 50px 0px;
+    background: $deepBlue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+    @media screen and (max-width: 1030px) {
+        flex-direction: column;
+    }
+    .footerCol1, .footerCol2, .footerCol3, .footerCol4{
+        width: 90%;
+        max-width: 300px;
+        margin: 30px 20px;
+        img{
+            width: 90%;
+        }
+        .line-0{
+            width: 200px;
+            height: 1px;
+            margin: 5px 0px;
+            background: $backGroundLight;
+        }
+        .line-1{
+            width: 150px;
+            height: 1px;
+            margin: 5px 0px;
+            background: $backGroundLight; 
+        }
+        .footer-heading{
+            color: $backGroundLight;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            color: $backGroundLight;
+            font-size: 18px;
+            font-weight: 300;
+            text-decoration: none;
+        }
+        .footer-list{
+            list-style: none;
+            margin: 10px 0px;
+            padding: 0px;
+            a{
+                text-decoration: none;
+            }
+            li{
+                color: $backGroundLight;
+                font-size: 20px;
+                font-weight: 300;
+                padding: 2px 0px;
+            }
+        }
+    }
+}
