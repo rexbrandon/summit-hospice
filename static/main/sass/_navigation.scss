@@ -1,9 +1,9 @@
-@use 'variables';
-@use 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .mobileNav {
     width: 100%;
-    background: variables.$backGroundLight;
+    background: $backGroundLight;
     height: 80px;
     position: relative;   
     padding-top: 15px;
@@ -26,26 +26,26 @@
         z-index: 1;
         left: 0;
         top: 0;
-        background-color: variables.$deepBlue;
+        background-color: $deepBlue;
         overflow-x: hidden; // Disable horizontal scroll
         transition: .4s;
         li{
             font-size: 20px;
             &:hover{
-                color: variables.$deepBlue;
+                color: $deepBlue;
             }
         }
         .menu-line {
             width: 80%;
             height: 1px;
-            @include mixins.centerObj();
+            @include centerObj();
             margin-top: 10px;
-            background-color: variables.$backGroundLight;
+            background-color: $backGroundLight;
         }
         .closebtn{
-            @include mixins.mobileNavBtn();
+            @include mobileNavBtn();
             text-decoration: none;
-            color: variables.$backGroundLight;
+            color: $backGroundLight;
         }
         img{
             width: 110px;
@@ -60,22 +60,22 @@
             text-align: left;
             margin-top: 50%; // avoids contact with close button on smaller screens
             a {
-                color: variables.$backGroundLight;
-                @include mixins.nav-links-setup();
+                color: $backGroundLight;
+                @include nav-links-setup();
             }
         }
     }
     .openbtn{
-        @include mixins.mobileNavBtn();
-        color: variables.$logoRed;
+        @include mobileNavBtn();
+        color: $logoRed;
     }  
 }
 .desktopNav{
     display: none;
     position: relative;
-    background: variables.$backGroundLight;
+    background: $backGroundLight;
     justify-content: flex-end;
-    height: 110px;
+    height: 120px;
     width: 100%;
     .navElements{
         display: flex;
@@ -84,16 +84,24 @@
         margin-right: 30px;
         a{
             text-decoration: none;
-            color: variables.$wavyBlack;
+            color: $wavyBlack;
             font-size: 20px;
             font-weight: 300;
             li{
                 padding: 0px 20px;
                 list-style: none;
                 &:hover{
-                    color: variables.$deepBlue;
+                    color: $deepBlue;
                 }
             }
+        }
+        .focus{
+            color: $deepBlue;
+            border: 2px solid $deepBlue;
+            border-radius: 2px;
+            padding: 12px 5px;
+            margin-left: 10px;
+            font-weight: 300;
         }
     }
     img{
@@ -108,7 +116,7 @@
 }
 .footerMain{
     padding: 50px 0px;
-    background: variables.$deepBlue;
+    background: $deepBlue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,16 +137,16 @@
             width: 200px;
             height: 1px;
             margin: 5px 0px;
-            background: variables.$backGroundLight;
+            background: $backGroundLight;
         }
         .line-1{
             width: 150px;
             height: 1px;
             margin: 5px 0px;
-            background: variables.$backGroundLight; 
+            background: $backGroundLight; 
         }
         .footer-heading{
-            color: variables.$backGroundLight;
+            color: $backGroundLight;
             font-size: 24px;
             font-weight: 400;
         }
@@ -146,7 +154,7 @@
             text-decoration: none;
         }
         p{
-            color: variables.$backGroundLight;
+            color: $backGroundLight;
             font-size: 18px;
             font-weight: 300;
             text-decoration: none;
@@ -159,7 +167,7 @@
                 text-decoration: none;
             }
             li{
-                color: variables.$backGroundLight;
+                color: $backGroundLight;
                 font-size: 20px;
                 font-weight: 300;
                 padding: 2px 0px;

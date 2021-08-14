@@ -1,0 +1,96 @@
+// GLOBAL MIXINS
+@mixin centerObj {
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin divBackground($backgroundGradient, $backgroundImage) {
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: $backgroundGradient, $backgroundImage;
+}
+// GLOBAL MIXINS END
+// NAV MIXINS
+@mixin mobileNavBtn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 26px;
+}
+@mixin nav-links-setup {
+    padding: 14px 16px;
+    margin-left: 10%;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+// FLEX ITEMS
+@mixin flexBox1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-evenly;
+}
+//
+////
+// CTA BOX
+@mixin ctaOuterBox1{
+    width: 300px;
+    padding: 20px 0px;
+    @include centerObj();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin ctaBox1($textColor, $backgroundColor){
+    padding: 12px 80px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $textColor;
+    background: $backgroundColor;
+}
+// 
+// TITLES AND SUBTITLES
+@mixin containerTitle($textColor){
+    font-size: 35px;
+    margin-left: 10%;
+    color: $textColor;
+    font-weight: 400;
+}
+@mixin containerInfo($textColor){
+    margin-left: 10%;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 20px 0px;
+    width: 90%;
+    max-width: 600px;
+    color: $textColor;
+}
+//
+//
+@mixin pageHeader($imgUrl){
+    background-image: $imgUrl;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0px;
+}
+@mixin headerBlock($backgroundColor){
+    width: 90%;
+    max-width: 600px;
+    padding: 50px 0px;
+    margin-left: 5%;
+    background: $backgroundColor;
+    border-radius: 10px;
+}
+@mixin block1(){
+    width: 90%;
+    max-width: 350px;
+    height: 450px;
+    padding: 20px 10px;
+    margin: 30px 10px;
+}

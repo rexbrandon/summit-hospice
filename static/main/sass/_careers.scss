@@ -1,0 +1,83 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+.careerPageMain{
+    background-image: url('/static/main/img/assets/lake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0px;}
+    .careerIntro{
+        background: $backGroundLight;
+        width: 80%;
+        max-width: 800px;
+        padding: 20px;
+        @include centerObj();
+        border-radius: 5px;
+        box-shadow: 5px 7px 15px $darkGray;
+        h2{
+            font-size: 30px;
+            text-align: center;
+            font-weight: 300;
+            color: $deepBlue;
+            padding: 20px 10px;
+        }
+        .spacer{
+            padding: 20px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    .formContainer{
+        .careersForm{
+            width: 80%;
+            max-width: 800px;
+            background: $backGroundLight;
+            margin: 40px 0px;
+            padding: 40px 20px;
+            border-radius: 5px; 
+            box-shadow: 5px 7px 15px $darkGray;
+            @include centerObj();
+            input[type=text], input[type=phone], input[type=email]{
+                font-size: 20px;
+                font-weight: 300;
+                padding: 10px 0px;
+                margin: 10px 0px;
+                width: 90%;
+                border: none;
+                border-bottom: 1px solid $deepBlue;
+                background: $backGroundLight;
+            }
+            label{
+                color: $wavyBlack;
+                font-size: 20px;
+                font-weight: 300;
+                margin: 10px 0px 0px;
+            }
+            input[type=submit]{
+                width: 100%;
+                background: $deepBlue;
+                color: $backGroundLight;
+                padding: 10px;
+                font-size: 20px;
+                border: none;
+                margin-top: 20px;
+                border-radius: 5px;
+            }
+            div{
+                margin: 10px 0px;
+                p{
+                    color: $wavyBlack;
+                    padding: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+            input[type=radio]{
+                margin: 0px 10px 5px 10px;
+            }
+        }
+}

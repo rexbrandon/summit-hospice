@@ -1,0 +1,145 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.homeHeader {
+    height: 100vh;
+    max-height: 1000px;
+    background-image: url('/static/main/img/assets/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .headerInfo{
+        position: relative;
+        width: 90%;
+        max-width: 600px;
+        @include centerObj();
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @media screen and (min-width: 1000px) {
+            top: 20%;
+        }
+        .headerTitle{
+            font-weight: 300;
+            padding-bottom: 5px;
+            color: $deepBlue;
+            text-align: center;
+            @media screen and (min-width: 1000px) {
+                font-size: 44px;
+            }
+        }
+        .headerLink{
+            padding: 10px 18px;
+            width: 200px;
+            margin-top: 50px;
+            @include centerObj();
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            background: $deepBlue;
+            color: $backGroundLight;
+            text-decoration: none;
+            text-align: center;
+            @media screen and (min-width: 1000px){
+                font-size: 26px;
+            }
+        }
+    }
+}
+.homeAbout{
+    background: $deepBlue;
+    padding: 80px 0px;
+    .ctaBox{
+        @include ctaOuterBox1();
+        .ctaButton{
+            @include ctaBox1($deepBlue, $backGroundLight);
+            box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+            inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+        }
+    }
+    .headerArea{
+        padding: 20px 10px;
+        .containerTitle{
+            @include containerTitle($backGroundLight);
+        }
+        .containerInfo{
+            @include containerInfo($backGroundLight);
+        }
+    }
+    .aboutBlocks{
+        @include flexBox1();
+        padding: 30px 0px;
+        .block{
+            @include block1();
+            background: $backGroundLight;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+            inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+            .subtitle{
+                text-align: center;
+                font-size: 28px;
+                font-weight: 400;
+                color: $deepBlue;
+            }
+            .iconBox{
+                width: 100px;
+                height: 100px;
+                @include centerObj();
+                padding: 15px 5px;
+                .icon{
+                    width: 100%;
+                }
+            }
+            .info{
+                font-size: 22px;
+                margin: 15px 20px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+.homeServices{
+    background: $backGroundLight;
+    padding: 80px 0px;
+    .servicesCtaBox{
+        @include ctaOuterBox1();
+        .ctaButton{
+            @include ctaBox1($backGroundLight, $logoRed);
+        }
+    }
+    .headerArea{
+        clear: both;
+        .containerTitle{
+            @include containerTitle($logoRed);
+        }
+        .containerInfo{
+            @include containerInfo($wavyBlack);
+        }
+    }
+}
+.mainCareers{
+    background: $backGroundLight;
+    padding: 80px 0px;
+    @include flexBox1();
+    align-items: center;
+    .leftSide{
+        margin-left: 5%;
+        .containerTitle{
+            @include containerTitle($logoRed);
+        }
+        .containerInfo{
+            @include containerInfo($wavyBlack);
+        }
+    }
+    .rightSide{
+        @include ctaOuterBox1();
+        .homeCareersCta{
+            @include ctaBox1($backGroundLight, $logoRed);
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+.serviceBlocks{
+    padding: 80px 0px;
+    margin: 0 5%;
+    @include flexBox1();
+    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+    }
+    .block{
+        width: 300px;
+        margin: 30px 15px;
+        @media screen and (min-width: 1200px) {
+            flex-basis: 30%;
+        }
+        .iconBlock{
+            width: 100px;
+            .icon{
+                width: 100%;
+            }
+        }
+        .infoBlock{
+            .serviceTitle{
+                font-weight: 400;
+                color: $logoRed;
+            }
+            .serviceText{
+                color: $wavyBlack;
+                padding: 20px 0px;
+                font-size: 20px;
+                font-weight: 300;
+                @media screen and (min-width: 1200px){
+                    width: 90%;
+                }
+            }
+            .serviceLink{
+                color: $logoRed;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.mobileLineRed{
+    width: 90%;
+    max-width: 400px;
+    height: 1px;
+    @include centerObj();
+    background: $darkRed;
+    @media screen and (min-width: 700px){
+        display: none;
+    }
+}

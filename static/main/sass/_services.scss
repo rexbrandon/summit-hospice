@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.servicesPageHeader{
+    @include pageHeader(url('/static/main/img/assets/holdingHands.jpg'));
+    .headerBlock{
+        @include headerBlock($deepBlue);
+        .pageTitle{
+            @include containerTitle($backGroundLight);
+            margin-left: 5%;
+        }
+        .pageDescription{
+            @include containerInfo($backGroundLight);
+            margin-left: 5%;
+        }
+    }    
+}
