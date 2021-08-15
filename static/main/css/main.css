@@ -364,9 +364,9 @@
   padding: 30px 0px;
 }
 .homeAbout .aboutBlocks .block {
-  width: 90%;
+  width: 80%;
   max-width: 350px;
-  height: 450px;
+  height: 525px;
   padding: 20px 10px;
   margin: 30px 10px;
   background: #fbfcfe;
@@ -591,9 +591,9 @@
   align-content: space-evenly;
 }
 .aboutMain .aboutBlocks .block {
-  width: 90%;
+  width: 80%;
   max-width: 350px;
-  height: 450px;
+  height: 525px;
   padding: 20px 10px;
   margin: 30px 10px;
   max-width: 375px;
