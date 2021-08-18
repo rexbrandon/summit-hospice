@@ -250,8 +250,8 @@
 }
 .contactContainer .formContainer .mainContactForm #submit {
   color: #fbfcfe;
-  background: #FF4747;
-  border-radius: 25px;
+  background: #fc0001;
+  border-radius: 5px;
   margin-top: 10px;
   font-size: 22px;
   height: 50px;
@@ -289,7 +289,7 @@
 }
 @media screen and (min-width: 1000px) {
   .homeHeader .headerInfo .headerTitle {
-    font-size: 44px;
+    font-size: 46px;
   }
 }
 .homeHeader .headerInfo .headerLink {
@@ -309,24 +309,57 @@
 }
 @media screen and (min-width: 1000px) {
   .homeHeader .headerInfo .headerLink {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
-.homeAbout {
+.secondHeaderArea {
+  padding: 100px 0px;
   background: #005cb9;
-  padding: 80px 0px;
-}
-.homeAbout .ctaBox {
-  width: 300px;
-  padding: 20px 0px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
 }
-.homeAbout .ctaBox .ctaButton {
+.secondHeaderArea .infoArea .containerTitle {
+  font-size: 34px;
+  margin-left: 10%;
+  color: #fbfcfe;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .secondHeaderArea .infoArea .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
+}
+.secondHeaderArea .infoArea .containerInfo {
+  margin-left: 10%;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  max-width: 800px;
+  line-height: 28px;
+  color: #fbfcfe;
+}
+@media screen and (max-width: 700px) {
+  .secondHeaderArea .infoArea .containerInfo {
+    margin-left: 5%;
+  }
+}
+.secondHeaderArea .backgroundArea {
+  margin: 30px;
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secondHeaderArea .backgroundArea .ctaButton {
   padding: 12px 80px;
   border-radius: 10px;
   font-size: 24px;
@@ -334,68 +367,13 @@
   text-decoration: none;
   color: #005cb9;
   background: #fbfcfe;
-  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
-.homeAbout .headerArea {
-  padding: 20px 10px;
-}
-.homeAbout .headerArea .containerTitle {
-  font-size: 35px;
-  margin-left: 10%;
-  color: #fbfcfe;
-  font-weight: 400;
-}
-.homeAbout .headerArea .containerInfo {
-  margin-left: 10%;
-  font-weight: 300;
-  font-size: 22px;
-  padding: 20px 0px;
+.secondHeaderArea .backgroundArea .iconBox {
   width: 90%;
-  max-width: 600px;
-  color: #fbfcfe;
+  max-width: 300px;
 }
-.homeAbout .aboutBlocks {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: space-evenly;
-  padding: 30px 0px;
-}
-.homeAbout .aboutBlocks .block {
-  width: 80%;
-  max-width: 350px;
-  height: 525px;
-  padding: 20px 10px;
-  margin: 30px 10px;
-  background: #fbfcfe;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-}
-.homeAbout .aboutBlocks .block .subtitle {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 400;
-  color: #005cb9;
-}
-.homeAbout .aboutBlocks .block .iconBox {
-  width: 100px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px 5px;
-}
-.homeAbout .aboutBlocks .block .iconBox .icon {
+.secondHeaderArea .backgroundArea .iconBox img {
   width: 100%;
-}
-.homeAbout .aboutBlocks .block .info {
-  font-size: 22px;
-  margin: 15px 20px;
-  font-weight: 300;
 }
 
 .homeServices {
@@ -424,19 +402,31 @@
   clear: both;
 }
 .homeServices .headerArea .containerTitle {
-  font-size: 35px;
+  font-size: 34px;
   margin-left: 10%;
   color: #fc0001;
-  font-weight: 400;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .homeServices .headerArea .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
 }
 .homeServices .headerArea .containerInfo {
   margin-left: 10%;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 0px;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
+  line-height: 28px;
   color: #1F0812;
+}
+@media screen and (max-width: 700px) {
+  .homeServices .headerArea .containerInfo {
+    margin-left: 5%;
+  }
 }
 
 .mainCareers {
@@ -454,19 +444,31 @@
   margin-left: 5%;
 }
 .mainCareers .leftSide .containerTitle {
-  font-size: 35px;
+  font-size: 34px;
   margin-left: 10%;
   color: #fc0001;
-  font-weight: 400;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .mainCareers .leftSide .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
 }
 .mainCareers .leftSide .containerInfo {
   margin-left: 10%;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 0px;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
+  line-height: 28px;
   color: #1F0812;
+}
+@media screen and (max-width: 700px) {
+  .mainCareers .leftSide .containerInfo {
+    margin-left: 5%;
+  }
 }
 .mainCareers .rightSide {
   width: 300px;
@@ -497,21 +499,27 @@
 .aboutPageHeader .headerBlock {
   width: 90%;
   max-width: 600px;
-  padding: 50px 0px;
+  padding: 30px 0px;
   margin-left: 5%;
   background: #005cb9;
   border-radius: 10px;
   padding: 20px 0px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 80px;
   width: 80%;
   max-width: 450px;
 }
 .aboutPageHeader .headerBlock .pageTitle {
-  font-size: 35px;
+  font-size: 34px;
   margin-left: 10%;
   color: #fbfcfe;
-  font-weight: 400;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .aboutPageHeader .headerBlock .pageTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
 }
 
 .missionStatement {
@@ -534,20 +542,32 @@
   width: 100%;
 }
 .missionStatement .inlineImgText .statementTitle {
-  font-size: 35px;
+  font-size: 34px;
   margin-left: 10%;
   color: #fbfcfe;
-  font-weight: 400;
+  font-weight: 300;
   margin-left: 20px;
+}
+@media screen and (max-width: 700px) {
+  .missionStatement .inlineImgText .statementTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
 }
 .missionStatement .statementText {
   margin-left: 10%;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 0px;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
+  line-height: 28px;
   color: #fbfcfe;
+}
+@media screen and (max-width: 700px) {
+  .missionStatement .statementText {
+    margin-left: 5%;
+  }
 }
 
 .aboutMain {
@@ -555,34 +575,44 @@
   background: #fbfcfe;
 }
 .aboutMain .blocksIntro {
-  padding: 0px 0px 40px;
-  width: 90%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 40px 0px;
+  width: 85%;
+  max-width: 600px;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .aboutMain .blocksIntro .containerTitle {
-  font-size: 35px;
+  font-size: 34px;
   margin-left: 10%;
   color: #fc0001;
-  font-weight: 400;
-  margin-left: 0;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .aboutMain .blocksIntro .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
 }
 .aboutMain .blocksIntro .containerInfo {
   margin-left: 10%;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 0px;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
+  line-height: 28px;
   color: #1F0812;
   margin-left: 0;
 }
+@media screen and (max-width: 700px) {
+  .aboutMain .blocksIntro .containerInfo {
+    margin-left: 5%;
+  }
+}
 .aboutMain .aboutBlocks {
-  padding: 20px 0px;
+  padding: 40px 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -591,36 +621,32 @@
   align-content: space-evenly;
 }
 .aboutMain .aboutBlocks .block {
-  width: 80%;
-  max-width: 350px;
-  height: 525px;
-  padding: 20px 10px;
-  margin: 30px 10px;
-  max-width: 375px;
-  height: 450px;
-  border-radius: 5px;
-  padding: 20px;
-}
-@media screen and (min-width: 1300px) {
-  .aboutMain .aboutBlocks .block {
-    width: 20%;
-  }
-}
-.aboutMain .aboutBlocks .block .imgBlock {
-  width: 250px;
-  margin-left: 5%;
-}
-@media screen and (min-width: 1500px) {
-  .aboutMain .aboutBlocks .block .imgBlock {
-    width: 300px;
-  }
-}
-.aboutMain .aboutBlocks .block .imgBlock img {
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  flex-wrap: wrap;
+  box-shadow: 0 0 0.75rem #EFEFEF;
 }
 .aboutMain .aboutBlocks .block .infoBlock {
-  margin-left: 5%;
-  padding-top: 25px;
+  padding: 30px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 550px) {
+  .aboutMain .aboutBlocks .block .infoBlock {
+    width: 90%;
+    margin: 15px;
+    height: 400px;
+  }
 }
 .aboutMain .aboutBlocks .block .infoBlock .blockTitle {
   font-weight: 400;
@@ -636,6 +662,30 @@
   .aboutMain .aboutBlocks .block .infoBlock .blockText {
     width: 90%;
   }
+}
+.aboutMain .aboutBlocks .block1 {
+  background-image: url("/static/main/img/assets/granddaughter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.aboutMain .aboutBlocks .block2 {
+  background-image: url("/static/main/img/assets/planFlexibility.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.aboutMain .aboutBlocks .block3 {
+  background-image: url("/static/main/img/assets/leading.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.aboutMain .aboutBlocks .block4 {
+  background-image: url("/static/main/img/assets/family.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .careerPageMain {
@@ -733,27 +783,176 @@
 .servicesPageHeader .headerBlock {
   width: 90%;
   max-width: 600px;
-  padding: 50px 0px;
+  padding: 30px 0px;
   margin-left: 5%;
   background: #005cb9;
   border-radius: 10px;
 }
 .servicesPageHeader .headerBlock .pageTitle {
-  font-size: 35px;
+  font-size: 34px;
   margin-left: 10%;
   color: #fbfcfe;
-  font-weight: 400;
+  font-weight: 300;
   margin-left: 5%;
+}
+@media screen and (max-width: 700px) {
+  .servicesPageHeader .headerBlock .pageTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
 }
 .servicesPageHeader .headerBlock .pageDescription {
   margin-left: 10%;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px 0px;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
+  line-height: 28px;
   color: #fbfcfe;
   margin-left: 5%;
+}
+@media screen and (max-width: 700px) {
+  .servicesPageHeader .headerBlock .pageDescription {
+    margin-left: 5%;
+  }
+}
+
+.servicesPageContainer {
+  padding: 60px;
+}
+.servicesPageContainer .serviceWhite, .servicesPageContainer .serviceGrey {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-evenly;
+  align-items: center;
+}
+.servicesPageContainer .serviceWhite .leftSide .containerTitle, .servicesPageContainer .serviceGrey .leftSide .containerTitle {
+  font-size: 34px;
+  margin-left: 10%;
+  color: #fc0001;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .servicesPageContainer .serviceWhite .leftSide .containerTitle, .servicesPageContainer .serviceGrey .leftSide .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
+}
+.servicesPageContainer .serviceWhite .leftSide .containerInfo, .servicesPageContainer .serviceGrey .leftSide .containerInfo {
+  margin-left: 10%;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  max-width: 800px;
+  line-height: 28px;
+  color: #1F0812;
+}
+@media screen and (max-width: 700px) {
+  .servicesPageContainer .serviceWhite .leftSide .containerInfo, .servicesPageContainer .serviceGrey .leftSide .containerInfo {
+    margin-left: 5%;
+  }
+}
+.servicesPageContainer .serviceWhite .rightSide, .servicesPageContainer .serviceGrey .rightSide {
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 450px) {
+  .servicesPageContainer .serviceWhite .rightSide, .servicesPageContainer .serviceGrey .rightSide {
+    margin: 30px 0px;
+  }
+}
+.servicesPageContainer .serviceWhite .rightSide .imgBox, .servicesPageContainer .serviceGrey .rightSide .imgBox {
+  width: 400px;
+}
+@media screen and (max-width: 450px) {
+  .servicesPageContainer .serviceWhite .rightSide .imgBox, .servicesPageContainer .serviceGrey .rightSide .imgBox {
+    width: 95%;
+  }
+}
+.servicesPageContainer .serviceWhite .rightSide .imgBox .serviceImg, .servicesPageContainer .serviceGrey .rightSide .imgBox .serviceImg {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 0.75rem #EFEFEF;
+}
+.servicesPageContainer .serviceWhite {
+  background: #fbfcfe;
+}
+.servicesPageContainer .serviceGrey {
+  background: #fbfcfe;
+}
+@media screen and (max-width: 450px) {
+  .servicesPageContainer .serviceGrey {
+    background: #EFEFEF;
+  }
+}
+
+.servicesPageCall {
+  padding: 80px 0px;
+  background: #005cb9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-evenly;
+  align-items: center;
+}
+.servicesPageCall .leftSide {
+  margin-left: 5%;
+}
+.servicesPageCall .leftSide .containerTitle {
+  font-size: 34px;
+  margin-left: 10%;
+  color: #fbfcfe;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .servicesPageCall .leftSide .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
+}
+.servicesPageCall .leftSide .containerInfo {
+  margin-left: 10%;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  max-width: 800px;
+  line-height: 28px;
+  color: #fbfcfe;
+}
+@media screen and (max-width: 700px) {
+  .servicesPageCall .leftSide .containerInfo {
+    margin-left: 5%;
+  }
+}
+.servicesPageCall .rightSide {
+  width: 300px;
+  padding: 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicesPageCall .rightSide .homeCareersCta {
+  padding: 12px 80px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #005cb9;
+  background: #fbfcfe;
 }
 
 .serviceBlocks {
