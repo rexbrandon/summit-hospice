@@ -819,7 +819,8 @@
 }
 
 .servicesPageContainer {
-  padding: 60px;
+  padding: 60px 0px;
+  background: #fbfcfe;
 }
 .servicesPageContainer .serviceWhite, .servicesPageContainer .serviceGrey {
   padding: 50px 0px;
@@ -889,7 +890,7 @@
 .servicesPageContainer .serviceGrey {
   background: #fbfcfe;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .servicesPageContainer .serviceGrey {
     background: #EFEFEF;
   }
