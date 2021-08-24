@@ -169,10 +169,7 @@
   font-size: 24px;
   font-weight: 400;
 }
-.footerMain .footerCol1 a, .footerMain .footerCol2 a, .footerMain .footerCol3 a, .footerMain .footerCol4 a {
-  text-decoration: none;
-}
-.footerMain .footerCol1 p, .footerMain .footerCol2 p, .footerMain .footerCol3 p, .footerMain .footerCol4 p {
+.footerMain .footerCol1 p, .footerMain .footerCol1 a, .footerMain .footerCol2 p, .footerMain .footerCol2 a, .footerMain .footerCol3 p, .footerMain .footerCol3 a, .footerMain .footerCol4 p, .footerMain .footerCol4 a {
   color: #fbfcfe;
   font-size: 18px;
   font-weight: 300;
