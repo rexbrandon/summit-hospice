@@ -94,6 +94,9 @@
             @include ctaBox1($backGroundLight, $logoRed);
         }
     }
+    .containerInfo{
+        @include containerInfo($wavyBlack);
+    }
     .headerArea{
         clear: both;
         .containerTitle{

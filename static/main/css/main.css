@@ -395,6 +395,21 @@
   color: #fbfcfe;
   background: #fc0001;
 }
+.homeServices .containerInfo {
+  margin-left: 10%;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  max-width: 800px;
+  line-height: 28px;
+  color: #1F0812;
+}
+@media screen and (max-width: 700px) {
+  .homeServices .containerInfo {
+    margin-left: 5%;
+  }
+}
 .homeServices .headerArea {
   clear: both;
 }
