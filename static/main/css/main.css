@@ -373,6 +373,67 @@
   width: 100%;
 }
 
+.hospiceEligibilityArea {
+  background: #fbfcfe;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hospiceEligibilityArea .infoArea .containerTitle {
+  font-size: 34px;
+  margin-left: 10%;
+  color: #fc0001;
+  font-weight: 300;
+}
+@media screen and (max-width: 700px) {
+  .hospiceEligibilityArea .infoArea .containerTitle {
+    margin-left: 5%;
+    font-size: 28px;
+  }
+}
+.hospiceEligibilityArea .infoArea .containerInfo {
+  margin-left: 10%;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0px;
+  width: 90%;
+  max-width: 800px;
+  line-height: 28px;
+  color: #1F0812;
+}
+@media screen and (max-width: 700px) {
+  .hospiceEligibilityArea .infoArea .containerInfo {
+    margin-left: 5%;
+  }
+}
+.hospiceEligibilityArea .infoArea .containerList {
+  margin-left: 15%;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 8px 0px;
+  list-style: none;
+}
+.hospiceEligibilityArea .backgroundArea {
+  margin: 30px;
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hospiceEligibilityArea .backgroundArea .iconBox {
+  width: 90%;
+  max-width: 300px;
+}
+.hospiceEligibilityArea .backgroundArea .iconBox img {
+  width: 100%;
+}
+
 .homeServices {
   background: #fbfcfe;
   padding: 80px 0px;
@@ -498,6 +559,16 @@
   font-weight: 400;
   text-decoration: none;
   color: #fbfcfe;
+  background: #fc0001;
+}
+
+.containerLineBreak {
+  height: 1px;
+  width: 90%;
+  max-width: 900px;
+  margin: 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
   background: #fc0001;
 }
 
@@ -977,7 +1048,10 @@
   justify-content: space-evenly;
   align-items: flex-start;
   align-content: space-evenly;
-  align-items: baseline;
+  align-items: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .serviceBlocks {
@@ -985,8 +1059,16 @@
   }
 }
 .serviceBlocks .block {
-  width: 300px;
+  width: 90%;
+  max-width: 500px;
+  height: 300px;
   margin: 30px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: 5px 7px 5px #EFEFEF;
 }
 @media screen and (min-width: 1200px) {
   .serviceBlocks .block {
@@ -994,20 +1076,31 @@
   }
 }
 .serviceBlocks .block .iconBlock {
-  width: 100px;
+  width: 125px;
 }
 .serviceBlocks .block .iconBlock .icon {
   width: 100%;
 }
+.serviceBlocks .block .infoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .serviceBlocks .block .infoBlock .serviceTitle {
-  font-weight: 400;
+  font-size: 26px;
+  font-weight: 300;
   color: #fc0001;
+  padding: 20px 0px;
 }
 .serviceBlocks .block .infoBlock .serviceText {
+  display: none;
   color: #1F0812;
   padding: 20px 0px;
   font-size: 20px;
   font-weight: 300;
+  width: 80%;
 }
 @media screen and (min-width: 1200px) {
   .serviceBlocks .block .infoBlock .serviceText {
@@ -1019,6 +1112,20 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
+}
+.serviceBlocks .block:hover .serviceText {
+  display: block;
+  transition: all 1s ease;
+}
+.serviceBlocks .block:hover .serviceTitle {
+  transition: all 1s ease;
+}
+.serviceBlocks .block:hover .iconBlock {
+  display: none;
+  transition: all 1s ease;
+}
+.serviceBlocks .block:hover {
+  border-radius: 5px;
 }
 
 .mobileLineRed {

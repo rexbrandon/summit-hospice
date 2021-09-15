@@ -85,6 +85,43 @@
         }
     }
 }
+.hospiceEligibilityArea{
+    background: $backGroundLight;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    .infoArea{
+        .containerTitle{
+            @include containerTitle($logoRed);
+        }
+        .containerInfo{
+            @include containerInfo($wavyBlack);
+        }
+        .containerList{
+            @include containerList($wavyBlack);
+        }
+    }
+    .backgroundArea{
+        margin: 30px;
+        border-radius: 20px;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .iconBox{
+            width: 90%;
+            max-width: 300px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
 .homeServices{
     background: $backGroundLight;
     padding: 80px 0px;
@@ -127,4 +164,12 @@
             @include ctaBox1($backGroundLight, $logoRed);
         }
     }
+}
+.containerLineBreak{
+    height: 1px;
+    width: 90%;
+    max-width: 900px;
+    margin: 30px 0px;
+    @include centerObj();
+    background: $logoRed;
 }

@@ -4,32 +4,51 @@
     padding: 80px 0px;
     margin: 0 5%;
     @include flexBox1();
-    align-items: baseline;
+    align-items: center;
+    max-width: 1600px;
+    @include centerObj();
     @media screen and (min-width: 1200px) {
         justify-content: center;
     }
     .block{
-        width: 300px;
+        width: 90%;
+        max-width: 500px;
+        height: 300px;
         margin: 30px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-shadow: 5px 7px 5px $backGroundDark;
         @media screen and (min-width: 1200px) {
             flex-basis: 30%;
         }
         .iconBlock{
-            width: 100px;
+            width: 125px;
             .icon{
                 width: 100%;
             }
         }
         .infoBlock{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
             .serviceTitle{
-                font-weight: 400;
+                font-size: 26px;
+                font-weight: 300;
                 color: $logoRed;
+                padding: 20px 0px;
             }
             .serviceText{
+                display: none;
                 color: $wavyBlack;
                 padding: 20px 0px;
                 font-size: 20px;
                 font-weight: 300;
+                width: 80%;
                 @media screen and (min-width: 1200px){
                     width: 90%;
                 }
@@ -40,6 +59,23 @@
                 font-size: 20px;
                 font-weight: 300;
             }
+        }
+        &:hover .serviceText{
+            display: block;
+            transition: all 1s ease;
+          
+        }
+        &:hover .serviceTitle{
+            transition: all 1s ease;
+          
+        }
+        &:hover .iconBlock{
+            display: none;
+            transition: all 1s ease;
+        }
+        &:hover{
+
+            border-radius: 5px;
         }
     }
 }

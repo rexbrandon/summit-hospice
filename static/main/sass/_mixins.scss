@@ -78,6 +78,13 @@
         margin-left: 5%;
     }
 }
+@mixin containerList($textColor){
+    margin-left: 15%;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 8px 0px;
+    list-style: none;
+}
 //
 //
 @mixin pageHeader($imgUrl){
