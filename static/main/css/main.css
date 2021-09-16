@@ -325,7 +325,7 @@
   color: #fbfcfe;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .secondHeaderArea .infoArea .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -341,7 +341,7 @@
   line-height: 28px;
   color: #fbfcfe;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .secondHeaderArea .infoArea .containerInfo {
     margin-left: 5%;
   }
@@ -367,7 +367,8 @@
 }
 .secondHeaderArea .backgroundArea .iconBox {
   width: 90%;
-  max-width: 300px;
+  max-width: 250px;
+  margin: 0px 0px 30px 0px;
 }
 .secondHeaderArea .backgroundArea .iconBox img {
   width: 100%;
@@ -388,7 +389,7 @@
   color: #fc0001;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .hospiceEligibilityArea .infoArea .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -404,7 +405,7 @@
   line-height: 28px;
   color: #1F0812;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .hospiceEligibilityArea .infoArea .containerInfo {
     margin-left: 5%;
   }
@@ -428,7 +429,7 @@
 }
 .hospiceEligibilityArea .backgroundArea .iconBox {
   width: 90%;
-  max-width: 300px;
+  max-width: 250px;
 }
 .hospiceEligibilityArea .backgroundArea .iconBox img {
   width: 100%;
@@ -466,7 +467,7 @@
   line-height: 28px;
   color: #1F0812;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .homeServices .containerInfo {
     margin-left: 5%;
   }
@@ -480,7 +481,7 @@
   color: #fc0001;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .homeServices .headerArea .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -496,7 +497,7 @@
   line-height: 28px;
   color: #1F0812;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .homeServices .headerArea .containerInfo {
     margin-left: 5%;
   }
@@ -522,7 +523,7 @@
   color: #fc0001;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .mainCareers .leftSide .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -538,7 +539,7 @@
   line-height: 28px;
   color: #1F0812;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .mainCareers .leftSide .containerInfo {
     margin-left: 5%;
   }
@@ -598,7 +599,7 @@
   color: #fbfcfe;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .aboutPageHeader .headerBlock .pageTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -631,7 +632,7 @@
   font-weight: 300;
   margin-left: 20px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .missionStatement .inlineImgText .statementTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -647,7 +648,7 @@
   line-height: 28px;
   color: #fbfcfe;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .missionStatement .statementText {
     margin-left: 5%;
   }
@@ -672,7 +673,7 @@
   color: #fc0001;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .aboutMain .blocksIntro .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -689,7 +690,7 @@
   color: #1F0812;
   margin-left: 0;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .aboutMain .blocksIntro .containerInfo {
     margin-left: 5%;
   }
@@ -878,7 +879,7 @@
   font-weight: 300;
   margin-left: 5%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .servicesPageHeader .headerBlock .pageTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -895,7 +896,7 @@
   color: #fbfcfe;
   margin-left: 5%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .servicesPageHeader .headerBlock .pageDescription {
     margin-left: 5%;
   }
@@ -921,7 +922,7 @@
   color: #fc0001;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .servicesPageContainer .serviceWhite .leftSide .containerTitle, .servicesPageContainer .serviceGrey .leftSide .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -937,7 +938,7 @@
   line-height: 28px;
   color: #1F0812;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .servicesPageContainer .serviceWhite .leftSide .containerInfo, .servicesPageContainer .serviceGrey .leftSide .containerInfo {
     margin-left: 5%;
   }
@@ -999,7 +1000,7 @@
   color: #fbfcfe;
   font-weight: 300;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .servicesPageCall .leftSide .containerTitle {
     margin-left: 5%;
     font-size: 28px;
@@ -1015,7 +1016,7 @@
   line-height: 28px;
   color: #fbfcfe;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .servicesPageCall .leftSide .containerInfo {
     margin-left: 5%;
   }
@@ -1069,6 +1070,25 @@
   flex-wrap: wrap;
   flex-direction: column;
   box-shadow: 5px 7px 5px #EFEFEF;
+  /*
+  WHEN CONTENT IS ADDED TO THE SERVICES BLOCKS
+  &:hover .serviceText{
+      display: block;
+      transition: all 1s ease;
+
+  }
+  &:hover .serviceTitle{
+      transition: all 1s ease;
+
+  }
+  &:hover .iconBlock{
+      display: none;
+      transition: all 1s ease;
+  }
+  &:hover{
+
+      border-radius: 5px;
+  }*/
 }
 @media screen and (min-width: 1200px) {
   .serviceBlocks .block {
@@ -1112,20 +1132,6 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
-}
-.serviceBlocks .block:hover .serviceText {
-  display: block;
-  transition: all 1s ease;
-}
-.serviceBlocks .block:hover .serviceTitle {
-  transition: all 1s ease;
-}
-.serviceBlocks .block:hover .iconBlock {
-  display: none;
-  transition: all 1s ease;
-}
-.serviceBlocks .block:hover {
-  border-radius: 5px;
 }
 
 .mobileLineRed {
