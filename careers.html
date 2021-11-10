@@ -57,15 +57,15 @@
         </div>
 
         <div class="formContainer">
-            <form action="post" class="careersForm">
-                <div><input type="text" id="fname" value="first name"></div>
-                <div><input type="text" id="lname" value="last name"></div>
-                <div><input type="phone" id="phone" value="phone number"></div>
-                <div><input type="email" id="email" value="email"></div>
+            <form class="careersForm" action="https://getform.io/f/30f87a5b-d62a-4883-94d3-da4927b68016" method="POST" enctype="multipart/form-data">
+                <div><input name="first_name" type="text" id="fname" placeholder="first name"></div>
+                <div><input name="first_name" type="text" id="lname" placeholder="last name"></div>
+                <div><input name="first_name" type="phone" id="phone" placeholder="phone number"></div>
+                <div><input name="first_name" type="email" id="email" placeholder="email"></div>
                 <div><label for="info1">How did you hear about us?</label>
-                <input type= "text" id="info1"></div>
+                <input name="how_they_heard" type= "text" id="info1"></div>
                 <div><label for="info2">What license do you currently hold?</label>
-                <input type= "text" id="info2"></div>
+                <input name="current_licenses" type= "text" id="info2"></div>
                 <div>
                     <p>Are you willing to take call if required?</p>
                     <label for="yes">Yes</label>
@@ -101,7 +101,7 @@
                     <label for="no">No</label>
                     <input type="radio" name="car" id="no" value="no">
                 </div>
-                <div><input type="text" id="comments" value="Comments / Questions"></div>
+                <div><input type="text" id="comments" placeholder="Comments / Questions"></div>
                 <div><input type="file" name="resume" id="resume"></div>
                 <div><input type="submit" value="submit"></div>
             </form>
